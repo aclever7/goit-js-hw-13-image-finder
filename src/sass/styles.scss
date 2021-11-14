@@ -1,0 +1,127 @@
+:root {
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background-color: grey;
+  color: #424242;
+  padding: 30px 5px;
+  @media screen and (min-width: 760px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
+.search-form {
+  @media screen and (min-width: 480px) {
+    margin-right: auto;
+    margin-left: auto;
+    width: 427px;
+  }
+}
+.search-field {
+  border: 1px solid grey;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 20px;
+  margin-right: 20px;
+  display: inline-block;
+  margin-bottom: 30px;
+  @media screen and (min-width: 480px) {
+    width: 320px;
+  }
+}
+.btn {
+  border: 1px solid grey;
+  border-radius: 50px;
+  padding: 10px 20px;
+  background-color: blue;
+
+  font-size: 20px;
+}
+.gallery {
+  padding: 0;
+}
+.img-thumb {
+  width: 300px;
+  height: 204px;
+  overflow: hidden;
+  //   border-radius: 10px;
+}
+.photo-card {
+  height: 252px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.photo-card__img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  display: block;
+}
+
+.gallery__item {
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+
+  @media screen and (min-width: 760px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.photo-card {
+  @media screen and (max-width: 759px) {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  width: 350px;
+  margin: 10px;
+}
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+}
+.stats-item {
+  margin-right: 15px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+}
+.material-icons {
+  margin-right: 4px;
+}
+.notify {
+  background-color: orangered;
+  font-size: 30px;
+  color: white;
+  border-radius: 4px;
+}
+.button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button.is-hidden {
+  display: none;
+}
+
+.button > .spinner.is-hidden {
+  display: none;
+}
